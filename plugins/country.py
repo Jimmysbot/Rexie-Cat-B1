@@ -1,4 +1,3 @@
-from config import
 from countryinfo import CountryInfo
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
