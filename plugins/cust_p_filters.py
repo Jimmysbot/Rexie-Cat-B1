@@ -1,11 +1,8 @@
 from pyrogram import (
     filters
 )
-from pyrobot import (
-    SUDO_USERS,
-    USE_AS_BOT
-)
-from pyrobot.helper_functions.admin_check import admin_check
+
+from plugins.admin_check import admin_check
 
 USE_AS_BOT = "True"
 SUDO_USERS = "1455598938"
