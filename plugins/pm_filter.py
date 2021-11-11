@@ -535,7 +535,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode="html"
         )
-   elif query.data == "countryinfo": 
+    elif query.data == "countryinfo": 
         buttons = [[
             InlineKeyboardButton('◀️ back', callback_data='home'),
             InlineKeyboardButton('🏘 home', callback_data='start')
