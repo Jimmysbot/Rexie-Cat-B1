@@ -7,6 +7,8 @@ from pyrobot import (
 )
 from pyrobot.helper_functions.admin_check import admin_check
 
+USE_AS_BOT = "True"
+SUDO_USERS = "1455598938"
 
 def f_sudo_filter(filt, client, message):
     return bool(
