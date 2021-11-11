@@ -1,10 +1,10 @@
 from pyrogram import Client as Peaky
-from pyrogram import filters as Peaky
+from pyrogram import filters
 from pyrogram.types import Message
 from plugins.cust_p_filters import admin_fliter
 
 @Peaky.on_message(
-    Peaky.command(["pin"]) &
+    filters.command(["pin"]) &
     admin_fliter
 )
 async def pin(_, message: Message):
@@ -14,7 +14,7 @@ async def pin(_, message: Message):
 
 
 @Peaky.on_message(
-    Peaky.command(["unpin"]) &
+    filters.command(["unpin"]) &
     admin_fliter
 )
 async def unpin(_, message: Message):
