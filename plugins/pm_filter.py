@@ -20,6 +20,14 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
+INFO_TEXT = """<b>Cmd /info, /stickerid</b>
+
+<code>☆ If You Need a Telegram User Id Forword A message To Here ( With forward tag )
+If You Need Telegram Sticker Id Click /stickerid To Get Sticker Id ( Reply With Sticker )
+☆ Click /info To Pick Up Your Telegram Information
+☆ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</code>"""
+
+
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
 /covid  <country <countryname> <code> you can find a corona information of every country 
 example : - /covid india</code>"""
@@ -431,7 +439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
             ],[
             InlineKeyboardButton('COUNTRY 🌎', callback_data='countryinfo'),
-            InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
+            InlineKeyboardButton('INFO 🕵️‍♂️', callback_data='info')
             ],[
             InlineKeyboardButton('HOME 🏡', callback_data='start')
             ]]
@@ -546,6 +554,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=COUNTRY_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
+    elif query.data == "info": 
+        buttons = [[
+            InlineKeyboardButton('◀️ 𝙱𝙰𝙲𝙺', callback_data='home'),
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴', callback_data='close')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            INFO_TEXT,
             reply_markup=reply_markup,
             parse_mode="html"
         )
