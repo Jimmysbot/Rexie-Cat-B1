@@ -525,6 +525,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
 
+    elif query_data == "countryinfo": 
+        buttons = [[
+            InlineKeyboardButton('◀️ back', callback_data='home'),
+            InlineKeyboardButton('🏘 home', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        
+        await update.message.edit_text(
+            COUNTRY_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('🚶‍♂️ Back', callback_data='extra')
