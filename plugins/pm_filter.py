@@ -529,9 +529,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('◀️ back', callback_data='home'),
             InlineKeyboardButton('🏘 home', callback_data='start')
         ]]
+        
         reply_markup = InlineKeyboardMarkup(buttons)
+       
         await query.message.edit_text(
-            text=COUNTRY_TEXT,
+            COUNTRY_TEXT,
             reply_markup=reply_markup,
             parse_mode="html"
         )
