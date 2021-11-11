@@ -430,6 +430,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('PIN 📍', callback_data='pin'),
             InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
             ],[
+            InlineKeyboardButton('COUNTRY 🌎', callback_data='countryinfo'),
+            InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
+            ],[
             InlineKeyboardButton('HOME 🏡', callback_data='start')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
