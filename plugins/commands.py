@@ -11,15 +11,7 @@ from info import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNE
 from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
-@Client.on_message(filters.command('hoy'))
 
-async def hoy(client):
-
-client.send_message(
-chat_id=message.from_user.id,
-text="heejjsjjsjssj",
-parse_mode="markdown"
-)
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
