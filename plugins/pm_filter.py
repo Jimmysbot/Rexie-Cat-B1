@@ -23,11 +23,13 @@ BUTTONS = {}
 INFO_TEXT = """<b>Cmd /info, /stickerid</b>
 
 <b>➪ If You Need a Telegram User Id Forword A message To Here ( With forward tag )
-\𝗇➪ Click /info To Pick Up Your Telegram Information
-\𝗇➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
 
-SONG_TEXT = """<b>🎧 Iam a Simple YouTube To MP3 Downloader Bot 
-Send Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
+➪ Click /info To Pick Up Your Telegram Information
+
+➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
+
+SONG_TEXT = """<b>🎙️ Iam a Simple YouTube To MP3 Downloader Bot 
+\nSend Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
 
 STICKER_TEXT ="""<b>COMMAND /stickerid
 \n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
@@ -43,8 +45,8 @@ GAME_TEXT ="""<b>𝖧𝖾𝗅𝗉: 𝖦𝖺𝗆𝖾 𝖬𝗈𝖽𝖾 🎮
 𝟨. /peach 𝗈𝗋 /peech - 𝖭𝖺𝗎𝗀𝗁𝗍𝗒 𝖯𝖾𝖺𝖼𝗁</b>"""
 
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
-/covid  <country <countryname> <code> you can find a corona information of every country 
-example : - /covid india</code>"""
+/n/covid  <country <countryname> <code> you can find a corona information of every country 
+/nexample : - /covid india</code>"""
 
 COUNTRY_TEXT = """<b>here is the help for County information module</b>
 <code>I am a country information finder<code>
@@ -457,7 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song')
             ],[
             InlineKeyboardButton('HOME 🏡', callback_data='start'),
-            InlineKeyboardButton('𝖦𝖺𝗆𝖾', callback_data='sticke')
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾', callback_data='game')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -551,20 +553,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "sticke":
+    elif query.data == "game":
         buttons = [[
             InlineKeyboardButton('🚶‍♂️ Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=STICKE_TEXT,
+            text=GAME_TEXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "song": 
         buttons = [[
-            InlineKeyboardButton('◀️ 𝙱𝙰𝙲𝙺', callback_data='home'),
-            InlineKeyboardButton('❓ 𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂', callback_data='song_ex')
+            InlineKeyboardButton('◀️ 𝖡𝖺𝖼𝗄', callback_data='home'),
+            InlineKeyboardButton('❓ 𝖤𝗑𝖺𝗆𝗉𝗅𝖾𝗌', callback_data='song_ex')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
