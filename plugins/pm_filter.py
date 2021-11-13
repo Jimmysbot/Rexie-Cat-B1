@@ -26,6 +26,9 @@ INFO_TEXT = """<b>Cmd /info, /stickerid</b>
 \𝗇➪ Click /info To Pick Up Your Telegram Information
 \𝗇➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
 
+SONG_TEXT = """<b>🎧 Iam a Simple YouTube To MP3 Downloader Bot 
+Send Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
+
 STICKER_TEXT ="""<b>COMMAND /stickerid
 \n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
 
