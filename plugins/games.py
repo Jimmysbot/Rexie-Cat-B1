@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 
-# Sticker ID 
-@Client.on_message(filters.command(["stickerid"]))
-async def stickerid(bot, message):   
+# Sticke
+@Client.on_message(filters.command(["sticke"]))
+async def sticke(bot, message):   
     if message.reply_to_message.sticker:
        await message.reply(f"**Sticker ID is**  \n `{message.reply_to_message.sticker.file_id}` \n \n ** Unique ID is ** \n\n`{message.reply_to_message.sticker.file_unique_id}`", quote=True)
     else: 
