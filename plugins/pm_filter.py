@@ -32,8 +32,15 @@ Send Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
 STICKER_TEXT ="""<b>COMMAND /stickerid
 \n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
 
-STICKE_TEXT ="""<b>COMMAND /sticke
-\n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
+GAME_TEXT ="""<b>𝖧𝖾𝗅𝗉: 𝖦𝖺𝗆𝖾 𝖬𝗈𝖽𝖾 🎮
+\n𝖭𝗈𝗍𝗁𝗂𝗇𝗀 𝖬𝗎𝖼𝗁 𝖩𝗎𝗌𝗍 𝖲𝗈𝗆𝖾 𝖫𝗂𝗍𝗍𝗅𝖾 𝖳𝗂𝗆𝖾𝖯𝖺𝗌𝗌𝖾𝗌 𝖶𝗂𝗍𝗁 𝖠𝗇𝗂𝗆𝖺𝗍𝖾𝖽𝖣𝖺𝗋𝗍𝗌
+ 𝖳𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍: 
+\n𝟣. /football - 𝖪𝗂𝖼𝗄 𝗍𝗁𝖾 𝖡𝖺𝗅𝗅 
+𝟤. /spin - 𝖲𝗉𝗂𝗇 𝖳𝗁𝖾 𝖱𝗈𝗅𝗅
+𝟥. /dice  - 𝖯𝗅𝖺𝗒 𝖶𝗂𝗍𝗁 𝖣𝗂𝖼𝖾 
+𝟦. /roll - 𝖱𝗈𝗅𝗅 𝖳𝗁𝖾 𝖡𝖺𝗅𝗅
+𝟧. /rip - 𝖠𝗇𝗂𝗆𝖺𝗍𝖾𝖽 𝖱𝖨𝖯 
+𝟨. /peach 𝗈𝗋 /peech - 𝖭𝖺𝗎𝗀𝗁𝗍𝗒 𝖯𝖾𝖺𝖼𝗁</b>"""
 
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
 /covid  <country <countryname> <code> you can find a corona information of every country 
