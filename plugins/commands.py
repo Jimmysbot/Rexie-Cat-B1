@@ -16,7 +16,9 @@ logger = logging.getLogger(__name__)
 async def hoy(client):
 
 client.send_message(
-text="heejjsjjsjssj"
+chat_id=message.from_user.id,
+text="heejjsjjsjssj",
+parse_mode="markdown"
 )
 @Client.on_message(filters.command("start"))
 async def start(client, message):
