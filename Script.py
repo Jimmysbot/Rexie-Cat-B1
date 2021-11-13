@@ -22,11 +22,11 @@ class script(object):
 𝖲𝖮𝖴𝖱𝖢𝖤 𝖢𝖮𝖣𝖤 ~ 𝖭𝖮𝖳 𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖱𝖨𝖦𝖧𝖳 𝖭𝖮𝖶</b>
 
 <b>𝖮𝖳𝖧𝖤𝖱 𝖪𝖨𝖭𝖣 𝖡𝖮𝖳𝖲:</b>
-<b>𝖠𝖴𝖳𝖮 𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a https://github.com/EvamariaTG/EvaMaria>𝖤𝖵𝖠 𝖬𝖠𝖱𝖨𝖠</a>
+<b>𝖠𝖴𝖳𝖮 𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a href='https://github.com/EvamariaTG/EvaMaria'>𝖤𝗏𝖺 𝖬𝖺𝗋𝗂𝖺</a>
 
-<b>𝖲𝖮𝖭𝖦</b> :  <a https://github.com/AsmSafone/RadioPlayerV2>𝖠𝗌𝗆𝖲𝖺𝖿𝗈𝗇𝖾</a>
+<b>𝖲𝖮𝖭𝖦</b> :  <a href='https://github.com/AsmSafone/RadioPlayerV2'>𝖠𝗌𝗆𝖲𝖺𝖿𝗈𝗇𝖾</a>
 
-<b>𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a https://github.com/TroJanzHEX/Unlimited-Filter-Bot>𝖴𝗇𝗅𝗂𝗆𝗂𝗍𝖾𝖽 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍</a>"""
+<b>𝖥𝖨𝖫𝖳𝖤𝖱</b> : <a href='https://github.com/TroJanzHEX/Unlimited-Filter-Bot'>𝖴𝗇𝗅𝗂𝗆𝗂𝗍𝖾𝖽 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
