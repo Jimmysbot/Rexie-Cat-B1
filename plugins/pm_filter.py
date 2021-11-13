@@ -431,6 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('CONNECTIONS ⚙️', callback_data='coct'),
             InlineKeyboardButton('EXTRA MODS 😁', callback_data='extra')
+            InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
             ],[
             InlineKeyboardButton('GROUP 🎬', url='https://t.me/moviehubgroupp'),
             InlineKeyboardButton('STATS ⭐', callback_data='stats')
