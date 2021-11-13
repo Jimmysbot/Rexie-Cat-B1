@@ -11,7 +11,7 @@ from info import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNE
 from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
-@Client.on_message(commands=['hoy'])
+@Client.on_message(filters.command('hoy'))
 
 def hoy(message):
 
