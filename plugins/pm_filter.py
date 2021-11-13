@@ -426,19 +426,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('MANUAL FILTER 🔖', callback_data='manuelfilter'),
-            InlineKeyboardButton('AUTO FILTER 📂', callback_data='autofilter')
+            InlineKeyboardButton('MANUAL FILTER', callback_data='manuelfilter'),
+            InlineKeyboardButton('AUTO FILTER', callback_data='autofilter'),
+            InlineKeyboardButton('CONNECTIONS', callback_data='coct')
             ],[
-            InlineKeyboardButton('CONNECTIONS ⚙️', callback_data='coct'),
-            InlineKeyboardButton('EXTRA MODS 😁', callback_data='extra')
+            InlineKeyboardButton('EXTRA', callback_data='extra'),
+            InlineKeyboardButton('GROUP', url='https://t.me/moviehubgroupp'),
+            InlineKeyboardButton('STATS', callback_data='stats')
             ],[
-            InlineKeyboardButton('GROUP 🎬', url='https://t.me/moviehubgroupp'),
-            InlineKeyboardButton('STATS ⭐', callback_data='stats')
-            ],[
-            InlineKeyboardButton('PIN 📍', callback_data='pin'),
-            InlineKeyboardButton('CORONA 🦠', callback_data='coronainfo')
-            ],[
+            InlineKeyboardButton('PIN', callback_data='pin'),
+            InlineKeyboardButton('CORONA', callback_data='coronainfo'),
             InlineKeyboardButton('COUNTRY', callback_data='countryinfo'),
+            ],[
             InlineKeyboardButton('INFO', callback_data='info'),
             InlineKeyboardButton('CORONA', callback_data='coronainfo')
             ],[
