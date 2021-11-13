@@ -77,7 +77,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To <a href='https://t.me/joinchat/09UWqAo8tH9iNmE9'>REXIE SUPPORT</a> !!**')
+        m.edit('**An Error Occured. Please Report This To [REXIE SUPPORT](https://t.me/joinchat/09UWqAo8tH9iNmE9) !!**')
         print(e)
     try:
         os.remove(audio_file)
