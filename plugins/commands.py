@@ -15,7 +15,8 @@ logger = logging.getLogger(__name__)
 
 def hoy(message):
 
-bot.replay_to(message, "hey what's up man?")
+client.send_message(
+text="huuuuugssjs")
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
