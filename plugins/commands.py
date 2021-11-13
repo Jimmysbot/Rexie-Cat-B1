@@ -13,10 +13,11 @@ from utils import get_size, is_subscribed, temp
 logger = logging.getLogger(__name__)
 @Client.on_message(filters.command('hoy'))
 
-def hoy(message):
+async def hoy(client):
 
 client.send_message(
-text="huuuuugssjs")
+text="heejjsjjsjssj"
+)
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
