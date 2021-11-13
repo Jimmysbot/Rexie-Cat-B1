@@ -444,7 +444,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
             InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='sticker'),
-            InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='sticker')
+            InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song')
             ],[
             InlineKeyboardButton('HOME 🏡', callback_data='start')
             ]]
@@ -540,6 +540,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "song": 
+        buttons = [[
+            InlineKeyboardButton('◀️ 𝙱𝙰𝙲𝙺', callback_data='home'),
+            InlineKeyboardButton('❓ 𝙴𝚇𝙰𝙼𝙿𝙻𝙴𝚂', callback_data='song_ex')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=SONG_TEXT,
+            reply_markup=reply_markup,
+            parse_mode="html"
+        )
     elif query.data == "sticker":
         buttons = [[
             InlineKeyboardButton('🔜 Back', callback_data='help')
@@ -571,6 +582,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=COUNTRY_TEXT,
             reply_markup=reply_markup,
             parse_mode="html"
+        )
+    elif query.data == "song_ex":
+        await query.answer("𝗘𝗫𝗔𝗠𝗣𝗟𝗘𝗦 :\n\n/song no idea ✅\nNo idea ❌\n\n/song fadded ✅\nfadded ❌", show_alert=True
         )
     elif query.data == "info": 
         buttons = [[
