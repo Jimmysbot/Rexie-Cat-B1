@@ -76,11 +76,8 @@ class script(object):
 
 <b>𝖭𝖮𝖳𝖤: 𝗍𝗁𝖾𝗌𝖾 𝖺𝗋𝖾 𝗍𝗁𝖾 𝖾𝗑𝗍𝗋𝖺 𝖿𝖾𝖺𝗍𝗎𝗋𝖾𝗌 𝗈𝖿 Rexie</b>
 • /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-<b>Film And Information</b>
-\n<code>🎬 Ge𝗍 𝗍𝗁𝖾 𝖿𝗂𝗅𝗆 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖿𝗋𝗈𝗆 𝖨𝖬𝖣𝖻 𝗌𝗈𝗎𝗋𝖼𝖾.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+
+• /info  - <code>get information about a user.</code>"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
