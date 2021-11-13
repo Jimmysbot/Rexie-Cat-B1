@@ -19,8 +19,8 @@ async def dart(bot, message):
          chat_id=message.chat.id
          await bot.send_dice(chat_id=chat_id, emoji='🎯')
 
-@Client.on_message(filters.command(["ripp"]))
-async def ripp(bot, message):
+@Client.on_message(filters.command(["death"]))
+async def death(bot, message):
          chat_id=message.chat.id
          await bot.send_dice(chat_id=chat_id, emoji='⚰️')
 
