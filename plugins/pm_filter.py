@@ -22,11 +22,12 @@ BUTTONS = {}
 
 INFO_TEXT = """<b>Cmd /info, /stickerid</b>
 
-<code>☆ If You Need a Telegram User Id Forword A message To Here ( With forward tag )
-If You Need Telegram Sticker Id Click /stickerid To Get Sticker Id ( Reply With Sticker )
-☆ Click /info To Pick Up Your Telegram Information
-☆ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</code>"""
+<b>➪ If You Need a Telegram User Id Forword A message To Here ( With forward tag )
+\𝗇➪ Click /info To Pick Up Your Telegram Information
+\𝗇➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
 
+STICKER_TEXT ="""<b>COMMAND /stickerid
+\n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
 
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
 /covid  <country <countryname> <code> you can find a corona information of every country 
