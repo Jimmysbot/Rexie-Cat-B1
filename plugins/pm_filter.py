@@ -32,6 +32,9 @@ Send Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
 STICKER_TEXT ="""<b>COMMAND /stickerid
 \n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
 
+STICKE_TEXT ="""<b>COMMAND /sticke
+\n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
+
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
 /covid  <country <countryname> <code> you can find a corona information of every country 
 example : - /covid india</code>"""
@@ -446,7 +449,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='sticker'),
             InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song')
             ],[
-            InlineKeyboardButton('HOME 🏡', callback_data='start')
+            InlineKeyboardButton('HOME 🏡', callback_data='start'),
+            InlineKeyboardButton('𝖦𝖺𝗆𝖾', callback_data='sticke')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -537,6 +541,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=PIN_TEXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "sticke":
+        buttons = [[
+            InlineKeyboardButton('🚶‍♂️ Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=STICKE_TEXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
