@@ -44,6 +44,11 @@ GAME_TEXT ="""<b>𝖧𝖾𝗅𝗉: 𝖦𝖺𝗆𝖾 𝖬𝗈𝖽𝖾 🎮
 𝟧. /rip - 𝖠𝗇𝗂𝗆𝖺𝗍𝖾𝖽 𝖱𝖨𝖯 
 𝟨. /peach 𝗈𝗋 /peech - 𝖭𝖺𝗎𝗀𝗁𝗍𝗒 𝖯𝖾𝖺𝖼𝗁</b>"""
 
+IMDBFILM_TEXT ="""<b>Film And Information</b>
+\n<code>🎬 Ge𝗍 𝗍𝗁𝖾 𝖿𝗂𝗅𝗆 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖿𝗋𝗈𝗆 𝖨𝖬𝖣𝖻 𝗌𝗈𝗎𝗋𝖼𝖾.</code>
+\n• /imdb    - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>"""
+
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
 /n/covid  <country <countryname> <code> you can find a corona information of every country 
 /nexample : - /covid india</code>"""
@@ -460,7 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('𝖧', callback_data='start'),
             InlineKeyboardButton('𝖦𝖺𝗆𝖾', callback_data='game'),
-            InlineKeyboardButton('𝖨𝖬𝖣𝖡', callback_data='start')
+            InlineKeyboardButton('𝖨𝖬𝖣𝖡', callback_data='imdbfilm')
             ],[
             InlineKeyboardButton('𝖧𝖮𝖬𝖤 🏠', callback_data='start')
             ]]
@@ -553,6 +558,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=PIN_TEXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "imdbfilm":
+        buttons = [[
+            InlineKeyboardButton('⚙️ 𝖡𝖺𝖼𝗄', callback_data='help'),
+            InlineKeyboardButton('👨‍🎤 𝖠𝖽𝗆𝗂𝗇', callback_data='admin')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=IMDBFILM_TEXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
