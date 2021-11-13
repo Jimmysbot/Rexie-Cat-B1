@@ -10,7 +10,7 @@ async def reply_info(client, message):
         quote=True,
         reply_markup=reply_markup
     )
-def stick_snd(country_name):
+def stick_snd(Hyy_ab):
     try:
 stick_snd = f"""Hey how are you"""
 
