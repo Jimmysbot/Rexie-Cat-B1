@@ -12,5 +12,5 @@ async def welcome(bot,message):
 async def goodbye(bot,message):
 	chatid= message.chat.id
 	msg =await bot.send_message(text=f"**Bye ,  {message.from_user.mention} , Have a Nice Day**",chat_id=chatid)
-await asyncio.sleep(10)
-await msg.delete()
+        await asyncio.sleep(10)
+        await msg.delete()
