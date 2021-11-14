@@ -20,7 +20,7 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
-INFO_TEXT = """<b>Cmd /info, /stickerid</b>
+INFO_TEXT = """<b>Command /info</b>
 
 <b>➪ If You Need a Telegram User Id Forword A message To Here ( With forward tag )
 
@@ -29,7 +29,10 @@ INFO_TEXT = """<b>Cmd /info, /stickerid</b>
 ➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
 
 SONG_TEXT = """<b>🎙️ Iam a Simple YouTube To MP3 Downloader Bot 
-\nSend Me Any Song Name With <b>/song</b> Command 🎧 </b>"""
+
+\nSend Me Any Song Name With <b>/song</b> Command 🎧</b> 
+
+EG : /song (songname)"""
 
 STICKER_TEXT ="""<b>COMMAND /stickerid
 \n𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 𝖢𝗅𝗂𝖼𝗄 /stickerid 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
@@ -45,17 +48,22 @@ GAME_TEXT ="""<b>𝖧𝖾𝗅𝗉: 𝖦𝖺𝗆𝖾 𝖬𝗈𝖽𝖾 🎮
 𝟨. /peach 𝗈𝗋 /peech - 𝖭𝖺𝗎𝗀𝗁𝗍𝗒 𝖯𝖾𝖺𝖼𝗁</b>"""
 
 REXIE_TEXT ="""<b>Film And Information</b>
-\n<code>🎬 Ge𝗍 𝗍𝗁𝖾 𝖿𝗂𝗅𝗆 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖿𝗋𝗈𝗆 𝖨𝖬𝖣𝖻 𝗌𝗈𝗎𝗋𝖼𝖾.</code>
+\n<b>🎬 Ge𝗍 𝗍𝗁𝖾 𝖿𝗂𝗅𝗆 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖿𝗋𝗈𝗆 𝖨𝖬𝖣𝖻 𝗌𝗈𝗎𝗋𝖼𝖾.</b>
 \n• /imdb    - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+\n• /search  - <code>get the film information from various sources.</code>"""
 
 CORONA_TEXT ="""<b>Here is the help for the coron information module</b>
-/n/covid  <country <countryname> <code> you can find a corona information of every country 
-/nexample : - /covid india</code>"""
+
+➡️ /covid <code>(countryname)</code> <b>you can find a corona information of every country</b>
+
+➡️ <b>example</b> : - /covid </code>india</code>"""
 
 COUNTRY_TEXT = """<b>here is the help for County information module</b>
-<code>I am a country information finder<code>
-<b>/country [countryname]</b> <code>I can find information of any country of the world</code>
+
+<b>I am a country information finder</b>
+<b>/country [countryname]</b> 
+
+<b>I can find information of any country of the world</b>
 """
 
 PIN_TEXT = """<b>𝖯𝗂𝗇:  
