@@ -8,18 +8,18 @@ async def country_info(bot, update: Message):
     country = update.text.split(" ", 1)[1]
     country = CountryInfo(country)
     info = f"""--**Country Information**--
-Name : `{country.name()}`
-Native Name : `{country.native_name()}`
-Capital : `{country.capital()}`
-Population : `{country.population()}`
-Region : `{country.region()}`
-Sub Region : `{country.subregion()}`
-Top Level Domains : `{country.tld()}`
-Calling Codes : `{country.calling_codes()}`
-Currencies : `{country.currencies()}`
-Residence : `{country.demonym()}`
-Timezone : `{country.timezones()}`
-Made by **@OGGY123kph**"""
+🌐 <b>Name</b> : `{country.name()}`
+🔤 <b>Native Name</b> : `{country.native_name()}`
+🕰️ <b>Capital</b> : `{country.capital()}`
+👥 <b>Population</b> : `{country.population()}`
+🌏 <b>Region</b> : `{country.region()}`
+🏖️ <b>Sub Region</b> : `{country.subregion()}`
+➡️ <b>Top Level Domains</b> : `{country.tld()}`
+📞 <b>Calling Codes</b> : `{country.calling_codes()}`
+💵 <b>Currencies</b> : `{country.currencies()}`
+🏷️ <b>Residence</b> : `{country.demonym()}`
+⏲️ <b>Timezone</b> : `{country.timezones()}`
+<b>©️ Made by</b> **@OGGY123kph**"""
     country_name = country.name()
     country_name = country_name.replace(" ", "+")
     reply_markup=InlineKeyboardMarkup(
