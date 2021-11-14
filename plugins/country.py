@@ -19,7 +19,7 @@ Calling Codes : `{country.calling_codes()}`
 Currencies : `{country.currencies()}`
 Residence : `{country.demonym()}`
 Timezone : `{country.timezones()}`
-Made by **@PEAKY_BLINDER_TG**"""
+Made by **@OGGY123kph**"""
     country_name = country.name()
     country_name = country_name.replace(" ", "+")
     reply_markup=InlineKeyboardMarkup(
