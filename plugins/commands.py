@@ -7,7 +7,7 @@ from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNEL, PICS
+from info import CHANNELS, ADMINS, FORCE_CHANNEL, CUSTOM_FILE_CAPTION, LOG_CHANNEL, PICS
 from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
@@ -48,9 +48,9 @@ async def start(client, message):
             parse_mode='html'
         )
         return
-    if AUTH_CHANNEL and not await is_subscribed(client, message):
+    if FORCE_CHANNEL and not await is_subscribed(client, message):
         try:
-            invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
+            invite_link = await client.create_chat_invite_link(int(FORCE_CHANNEL))
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
