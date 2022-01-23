@@ -28,7 +28,7 @@ INFO_TEXT = """<b>Command /info</b>
 
 ➪ If You Send a message ( Using Forward Tag ) From Your ( Public Or private ) Group and channnel You Will Receive Your Id Of That Group Or Channel</b>"""
 
-SONG_TEXT = """<b>🎙️ Iam a Simple YouTube To MP3 Downloader Bot 
+SONG_VIDEO_TEXT = """<b>🎙️ Iam a Simple YouTube To MP3 Downloader Bot 
 
 \nSend Me Any Song Name With <b>/song</b> Command 🎧</b> 
 
